@@ -1,0 +1,131 @@
+@import url("https://fonts.google.com/specimen/Fraunces");
+@import url("https://fonts.google.com/specimen/Montserrat");
+:root {
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --cream: hsl(30, 38%, 92%);
+  --text-margin:32px;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color : var(--cream);
+}
+p{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    color: var(--dark-grayish-blue);
+    margin:   var(--text-margin);
+    line-height: 1.5;
+}
+h1{
+    font-family: "Fraunces";
+    font-weight: 700;
+    margin:   var(--text-margin);
+    font-size: 32px;
+    line-height: 0.85;
+}
+
+.description{
+  color: var(--dark-grayish-blue);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  margin: var(--text-margin);
+}
+
+.main-container{
+  display: flex;
+  margin: auto;
+  max-width: 600px;
+  max-height: 450px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.image-container{
+  max-width: 50%;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.info{
+  max-width: 50%;
+}
+
+.prices{
+  display: flex;
+  align-items: center;
+  margin: 0 32px;
+}
+
+.price-discount{
+margin: 0 32px 0 0 ;
+  font-weight: 700;
+  font-size: 32px;
+  color: #3D8168;
+}
+.old-price{
+  margin: 0 32px 0 0 ;
+  text-decoration: line-through;
+}
+
+button{
+  width: 240px;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #3D8168;
+  border: none;
+  color: var(--white);
+  margin: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container-mobile{
+  display: none;
+}
+
+.cart-icon{
+  margin:5px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .main-container{
+  display: block;
+  margin: auto;
+  max-width: 340px;
+  max-height: 600px;
+  }
+  .image-container{
+    max-width: 100%;
+    max-height: 30%;
+  }
+  img{
+  max-height: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+}
+.image-container-desktop{
+  display: none;
+}
+.image-container-mobile{
+  display:block
+}
+.info{
+  max-width: 100%;
+}
+p,h1,.description{
+  margin: 15px;
+}
+}
