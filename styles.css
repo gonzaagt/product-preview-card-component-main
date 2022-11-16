@@ -1,5 +1,5 @@
-@import url("https://fonts.google.com/specimen/Fraunces");
 @import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
 :root {
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -96,6 +96,15 @@ button{
 
 .cart-icon{
   margin:5px;
+}
+
+.sr-only {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
 }
 
 @media only screen and (max-width: 600px) {
